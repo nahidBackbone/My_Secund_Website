@@ -1,3 +1,107 @@
-body{
-    background-color: aqua;
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    z-index: -1;
+    border-radius: 5px;
+
+}
+/* #navbar{
+    position: relative;
+} */
+
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height: 60px;
+    margin: 5px;
+    border-radius: 40px;
+    background-color: green;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: wheat; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: rgb(58, 56, 56);
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: rgb(237, 201, 201);
+    background-color: rgb(77, 170, 246);
+   
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('img/BG.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .90;
+}
+
+
+#home h1{
+    color: rgb(234, 216, 22);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#home p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1rem;
+    padding: 2px;
+    margin: 2px;
+}
+
+/* Utility class */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    color: brown;
+    background-color: rgb(246, 238, 9);
+    border-radius: 10px;
+    font-size: 1rem;
 }
